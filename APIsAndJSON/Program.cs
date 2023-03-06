@@ -8,7 +8,7 @@ namespace APIsAndJSON
         static void Main(string[] args)
         {
             //Ron and Kanye Convo
-            // RonVSKanyeAPI.CarelessWhispers();
+             RonVSKanyeAPI.CarelessWhispers();
 
             //WeatherMap Exercise
             var client = new HttpClient();
