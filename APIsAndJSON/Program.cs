@@ -16,7 +16,7 @@ namespace APIsAndJSON
             var key = "94684d2050fd2691b4eed34a07a2679c";
             var city = "Birmingham";
 
-            var weatherURL = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}";
+            var weatherURL = $"https://api.openweathermap.org/data/2.5/weather?q={city}&units=imperial&appid={key}";
             var response = client.GetStringAsync(weatherURL).Result;
 
             var formattedResponse= JObject.Parse(response).GetValue("main");
